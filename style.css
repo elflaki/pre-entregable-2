@@ -212,22 +212,9 @@ nav .icon-bars .line{
     text-align: center;
   }
 
-  .whatsapp-btn{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-  }
+ 
 
-  .whatsapp-btn img {
-    width: 50px; /* Ajusta el tamaño según tus necesidades */
-    height: 50px;
-    border-radius: 50%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;}
-    .whatsapp-btn img:hover {
-        transform: scale(1.1);
-    }
+  
 
   /*servicios style*/
 
