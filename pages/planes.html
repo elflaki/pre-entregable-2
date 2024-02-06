@@ -1,41 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <title>Menu Navegación</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <input type="checkbox" id="toggle">
-            <div class="logo">Menu</div>
-            <ul class="list">
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./trabaja.html">trabaja aqui</a></li>
-                <li><a href="./planes.html">planes</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-            </ul>
-            <label for="toggle" class="icon-bars">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </label>
-        </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="../CSS/styles.css">
+     <title>Menu Navegación</title>
+
+    </head>
+
+    <body class="bg-dark">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">MENU</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PLANES</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./trabaja.html">TRABAJA</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                      </li>
+                      </ul>
+    
+    
+                    
+                </div>
+            </div>
+          </nav>
     </header>
-    <main>
-                <h1>PLANES </h1>
-            <section class="bronce">
-               <h2> BRONCE</h2>
-                <br>
-                <P>El Plan Bronce Classic es una alternativa para quienes desean acceder a un servicio de calidad sin priorizar detalles adicionales y optimizando su presupuesto. 
-                    Con solo presentar tu credencial podrás acceder a una extensa nómina de prestadores en todo el país, 
-                    conservando la calidad de las prestaciones con una excelente relación costo beneficio.
-                </P>
-                <img class="imgbronce" src="../img/PLAN_BRONCE_4.png" alt="bronce">
-                <ol class="plan-a"> 
+    <main class="container">
+        <h1 class="titulo-principal text-center text-white my-4">PLANES</h1>
+
+        <!-- Sección BRONCE -->
+        <section class="row bronce">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="../img/PLAN_BRONCE_4.png" class="card-img-top img-fluid" alt="bronce">
+                    <div class="card-body">
+                        <h2 class="titulo-secundario">BRONCE</h2>
+                        <p class="descripcion-principal">El Plan Bronce Classic es una alternativa para quienes desean acceder a un servicio de calidad sin priorizar detalles adicionales y optimizando su presupuesto.</p>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <ol class="plan-a plan-list" id="listaBronce">
                     <li>La Cobertura Nacional mas amplia del país</li>
                     <li>Controles preventivos anuales</li>
                     <li>Clínica Médica</li>
@@ -50,25 +74,66 @@
                     <li>Cirugía de Ojos Excimer Láser</li>
                     <li>Asistencia en viajes</li>
                     <li>Cam Doctor. Atención de consultas por videollamadas</li>
-
-
-
-
                 </ol>
+            </div>
+        </section>
 
+        <!-- Sección PLATA -->
+        <section class="row plata">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="../img/PLAN_PLATA_2.png" class="card-img-top img-fluid" alt="plata">
+                    <div class="card-body">
+                        <h2 class="titulo-secundario">PLATA</h2>
+                        <p class="descripcion-principal">El Plan Plata se caracteriza por una combinación de calidad, agilidad y una perfecta relación costo-beneficio.</p>
+                        
+                    </div>
+                </div>
+            </div>
 
-            </section>
+            <div class="col-md-6">
+                <ol class="plan-b plan-list" id="listaPlata">
+                    <li>La Cobertura Nacional mas amplia del país</li>
+                    <li>Controles preventivos anuales</li>
+                    <li>Clínica Médica</li>
+                    <li>Pediatría</li>
+                    <li>Ginecología</li>
+                    <li>Internación</li>
+                    <li>Alta complejidad</li>
+                    <li>Psicología / Psiquiatría</li>
+                    <li>Kinesiología / Fisiatría</li>
+                    <li>Maternidad y plan Materno Infantil</li>
+                    <li>Odontología general</li>
+                    <li>Cirugía de Ojos Excimer Láser</li>
+                    <li>Asistencia en viajes</li>
+                    <li>Cam Doctor. Atención de consultas por videollamadas</li>
+                    <li>Habitación individual</li>
+                    <li>Odontología general</li>
+                    <li>Prótesis odontológica</li>
+                    <li>Óptica (lentes sin cargo)</li>
+                    <li>Cirugía de Ojos Excimer Láser</li>
+                    <li>Cobertura internacional (países limítrofes)</li> 
+                </ol>
+            </div>
+        </section>
 
-            <section class="plata">
-                <h2>PLATA</h2>
-                <br>
-                <p>El Plan Plata se caracteriza por una combinación de calidad, 
-                    agilidad y una perfecta relación costo-beneficio. 
-                    Con solo presentar tu credencial podrás acceder a una extensa y adecuada nómina de prestadores en todo el país.
+        <!-- Sección ORO -->
+        <section class="row oro">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="../img/PLAN_ORO_3.png" class="card-img-top img-fluid" alt="oro">
+                    <div class="card-body">
+                        <h2 class="titulo-secundario">ORO</h2>
+                        <p class="descripcion-principal">El Plan Oro brinda máxima calidad a través de una gama de profesionales y servicios en todo el país, con diferenciales de confort.</p>
+                       
+                    </div>
+                </div>
+            </div>
 
-                </p>
-                <img class="imgbronce" src="../img/PLAN_PLATA_2.png" alt="plata">
-                <ol class="plan-b"> 
+            <div class="col-md-6">
+                <ol class="plan-c plan-list" id="listaOro">
+                    <li>La Cobertura Nacional más amplia del país</li>
+                    <li>Controles preventivos anuales</li>
                     <li>La Cobertura Nacional mas amplia del país</li>
                     <li>Controles preventivos anuales</li>
                     <li>Clínica Médica</li>
@@ -89,95 +154,43 @@
                     <li>Óptica (lentes sin cargo)</li>
                     <li>Cirugía de Ojos Excimer Láser</li>
                     <li>Cobertura internacional (países limítrofes)</li>
-
-
-
-
-
-
-
-
-
-            </section>
-
-            <section class="oro">
-                <h2>ORO</h2>
-                <br>
-                <p>El Plan Oro brinda máxima calidad a través de una gama de profesionales y servicios en todo el país, con diferenciales de confort. 
-                    Permite, además, acceder a consultas y prácticas fuera de la nómina de prestadores, recibiendo luego el reintegro de cada prestación. Es una opción que ofrece calidad, 
-                    agilidad y gran accesibilidad, combinando excelencia y confort con amplia cobertura. </p>
-                    <img class="imgoro" src="../img/PLAN_ORO_3.png" alt="oro">
-                    <ol class="plan-c">
-                        <li>La Cobertura Nacional mas amplia del país</li>
-                        <li>Controles preventivos anuales</li>
-                        <li>Clínica Médica</li>
-                        <li>Pediatría</li>
-                        <li>Ginecología</li>
-                        <li>Internación</li>
-                        <li>Alta complejidad</li>
-                        <li>Psicología / Psiquiatría</li>
-                        <li>Kinesiología / Fisiatría</li>
-                        <li>Maternidad y plan Materno Infantil</li>
-                        <li>Odontología general</li>
-                        <li>Cirugía de Ojos Excimer Láser</li>
-                        <li>Asistencia en viajes</li>
-                        <li>Cam Doctor. Atención de consultas por videollamadas</li>
-                        <li>Habitación individual</li>
-                        <li>Odontología general</li>
-                        <li>Prótesis odontológica</li>
-                        <li>Óptica (lentes sin cargo)</li>
-                        <li>Cirugía de Ojos Excimer Láser</li>
-                        <li>Cobertura internacional (países limítrofes)</li>
-                        <li>Prótesis odontológica</li>
-                        <li>Implantes</li>
-                        <li>Ortodoncia (De 8 a 18 años por única vez)</li>
-                        <li>Blanqueamiento Dental</li>
-                        <li>Cirugía Estética 2 años de permanencia.</li>
-                       
-
-
-
-
-                    </ol>
-
-
-
-
-            </section>
-
-            
-
+                    <li>Prótesis odontológica</li>
+                    <li>Implantes</li>
+                    <li>Ortodoncia (De 8 a 18 años por única vez)</li>
+                    <li>Blanqueamiento Dental</li>
+                    <li>Cirugía Estética 2 años de permanencia.</li>
+                </ol>
+            </div>
+        </section>
     </main>
 
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-xmU/2s3Ig0S+BdbTJCpbnRDpj6tYyzh8vF2p0orMKdIoAglJ6a5BiB9DM9BlhCRA" crossorigin="anonymous"></script>
+   
 
 
 
 
-        
-    
-    
-    
-    
-    
-    
-    <footer>
-       
-        <div class="footer">
-            <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
-        
-        </div>
 
-
-
-
+    <footer>  
+    <div class="footer">
+        <p>&copy; 2024 Medical Emergency. Todos los derechos reservados.</p>
     
-    
+    </div>
+
     </footer>
 
 
 
 
-
-
 </body>
+
+
+
 </html>
+
+
+
+
