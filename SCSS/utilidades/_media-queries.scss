@@ -1,0 +1,24 @@
+// Consulta de medios para dispositivos móviles
+@media (max-width: 600px) {
+  body {
+    font-size: 14px; // Reducir el tamaño de fuente para dispositivos móviles
+  }
+  
+  // Otros estilos específicos para dispositivos móviles
+  // ...
+}
+
+// Consulta de medios para tablets
+@media (min-width: 601px) and (max-width: 1024px) {
+  // Estilos para tablets
+  // ...
+}
+
+// Consulta de medios para pantallas grandes
+@media (min-width: 1025px) {
+  // Estilos para pantallas grandes
+  // ...
+}
+
+// Otras consultas de medios según sea necesario
+// ...

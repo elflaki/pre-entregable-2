@@ -1,11 +1,21 @@
 @charset "UTF-8";
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
 body {
   margin: 0;
   padding: 0;
 }
 
+.navbar-brand {
+  width: 150px; 
+  height: auto; /* Esto mantendrá la proporción original */
+}
+
 .nav {
-  border: 1px solid #fff; /* Ajusta el ancho y color del borde según tus preferencias */
+  border: 1px solid #fff; 
   background-color: #333; /* Ajusta el color de fondo*/
   padding: 10px; /* Ajusta el espaciado interno*/
 }
@@ -31,10 +41,6 @@ body {
   padding: 0;
   border: 1px solid #555; /* Color del borde */
   border-radius: 10px;
-}
-
-.titulo-principal, .bordered-container, .image-grid {
-  margin-bottom: 20px;
 }
 
 .descripcion-principal {
@@ -160,15 +166,6 @@ li {
   margin-bottom: 10px;
 }
 
-@media (max-width: 600px) {
-  nav {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-  }
-  .list {
-    order: -1;
-  }
-}
 .card-img {
   max-width: 100%;
   height: auto;
@@ -178,8 +175,6 @@ li {
   margin-bottom: 20px;
 }
 
-
-
 .plan-list {
   list-style-type: disc;
   padding-left: 20px;
@@ -187,11 +182,6 @@ li {
 
 .plan-list li {
   color: white;
-}
-
-body {
-  background-color: #343a40; /* Fondo oscuro */
-  color: #fff; /* Texto blanco */
 }
 
 .servicios, .paramedicos, .medicos {
@@ -229,4 +219,4 @@ body {
   text-decoration: underline;
 }
 
-/*# sourceMappingURL=styles.css.map */
+

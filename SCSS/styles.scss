@@ -1,241 +1,231 @@
-// Stylos para navbar e index
+
+@charset "UTF-8";
+// Importar variables
+@import "utilidades/variables";
+
+// Importar mixins
+@import "utilidades/mixins";
+
+// Importar consultas de medios
+@import "utilidades/media-queries";
+
+// Estilos restantes
+
+
+
 body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav {
-    border: 1px solid #fff; /* Ajusta el ancho y color del borde según tus preferencias */
-    background-color: #333; /* Ajusta el color de fondo*/
-    padding: 10px; /* Ajusta el espaciado interno*/
-  }
-  
-  .titulo-principal, .bordered-container, .image-grid {
-    margin-bottom: 20px;
-  }
-  
-  .titulo-principal {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    text-decoration: underline;
-  }
-  
-  .titulo-secundario {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    background-color: #333;
-    padding: 0;
-    border: 1px solid #555; /* Color del borde */
-    border-radius: 10px;
-  }
-  
-  .titulo-principal, .bordered-container, .image-grid {
-    margin-bottom: 20px;
-  }
-  
-  .descripcion-principal {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    color: #BFD104;
-    font-size: 18px;
-  }
-  
-  .footer {
-    background-color: black;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #828282;
-    margin-top: 25%;
-    padding: 20px;
-  }
-  
-  .image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-  }
-  
-  .image-grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  // Trabaja
-  body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .trabaja {
-    margin-bottom: 20px;
-  }
-  
-  .contact-box {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-image: url(../img/contacto.jpg); /*imagen de fondo */
-    background-size: cover; /* tamaño de la caja */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    color: #BFD104; /* Cambia el color del texto para que sea legible en la imagen de fondo */
-  }
-  
-  .contact-box h2 {
-    text-align: center;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-bottom: 5px;
-  }
-  
-  input, textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  button {
-    padding: 10px;
-    background-color: #BFD104;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: black;
-  }
-  
-  // Planes
-  .header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .list {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  section {
-    border: 1px solid #ccc;
-    padding: 20px;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  ol {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  
-  li {
-    margin-bottom: 10px;
-  }
-  
-  @media (max-width: 600px) {
-    nav {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto;
-    }
-  
-    .list {
-      order: -1;
-    }
-  }
-  
-  // Stylos a las card de los planes
-  .card-img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .card {
-    margin-bottom: 20px;
-  }
-  
- 
-  .plan-list {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .plan-list li {
-    color: white;
-  }
-  
-  // Servicios
-  // Estilos generales
-  body {
-    background-color: #343a40; /* Fondo oscuro */
-    color: #fff; /* Texto blanco */
-  }
-  
-  // Estilos para las secciones
-  .servicios, .paramedicos, .medicos {
-    margin-top: 20px; /* Espacio entre secciones */
-  }
-  
-  // Estilos para las imágenes
-  .ambulance, .paramedic, .medi {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  // Contactos
-  // Estilos para la sección de contacto
-  .contacto {
-    padding: 40px; /* Espaciado interno */
-    text-align: center; /* Centrar contenido */
-  }
-  
-  .info-contacto {
-    margin-top: 20px; /* Espacio superior entre la descripción y la información de contacto */
-  }
-  
-  .telefono, .email {
-    font-size: 18px; /* Tamaño de fuente */
-    margin: 10px 0; /* Espaciado superior e inferior */
-  }
-  
-  // Estilos para los enlaces de teléfono y correo electrónico
-  .telefono a, .email a {
-    color: #007bff; /* Color del enlace */
-    text-decoration: none;
-  }
-  
-  .telefono a:hover, .email a:hover {
-    text-decoration: underline;
-  }
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand {
+  width: 150px; /* Ajusta el tamaño según lo necesites */
+  height: auto; /* Esto mantendrá la proporción original */
+}
+
+.nav {
+  border: 1px solid #fff; /* Ajusta el ancho y color del borde según tus preferencias */
+  background-color: #333; /* Ajusta el color de fondo*/
+  padding: 10px; /* Ajusta el espaciado interno*/
+}
+
+.titulo-principal, .bordered-container, .image-grid {
+  margin-bottom: 20px;
+}
+
+.titulo-principal {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: underline;
+}
+
+.titulo-secundario {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: #333;
+  padding: 0;
+  border: 1px solid #555; /* Color del borde */
+  border-radius: 10px;
+}
+
+.descripcion-principal {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  color: #BFD104;
+  font-size: 18px;
+}
+
+.footer {
+  background-color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #828282;
+  margin-top: 25%;
+  padding: 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.trabaja {
+  margin-bottom: 20px;
+}
+
+.contact-box {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-image: url(../img/contacto.jpg); /*imagen de fondo */
+  background-size: cover; /* tamaño de la caja */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: #BFD104; /* Cambia el color del texto para que sea legible en la imagen de fondo */
+}
+
+.contact-box h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  padding: 10px;
+  background-color: #BFD104;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+section {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.card-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.plan-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.plan-list li {
+  color: white;
+}
+
+.servicios, .paramedicos, .medicos {
+  margin-top: 20px; /* Espacio entre secciones */
+}
+
+.ambulance, .paramedic, .medi {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.contacto {
+  padding: 40px; /* Espaciado interno */
+  text-align: center; /* Centrar contenido */
+}
+
+.info-contacto {
+  margin-top: 20px; /* Espacio superior entre la descripción y la información de contacto */
+}
+
+.telefono, .email {
+  font-size: 18px; /* Tamaño de fuente */
+  margin: 10px 0; /* Espaciado superior e inferior */
+}
+
+.telefono a, .email a {
+  color: #007bff; /* Color del enlace */
+  text-decoration: none;
+}
+
+.telefono a:hover, .email a:hover {
+  text-decoration: underline;
+}
+
+
