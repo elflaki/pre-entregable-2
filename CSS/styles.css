@@ -10,12 +10,12 @@ body {
 }
 
 .navbar-brand {
-  width: 150px; 
+  width: 150px; /* Ajusta el tamaño según lo necesites */
   height: auto; /* Esto mantendrá la proporción original */
 }
 
 .nav {
-  border: 1px solid #fff; 
+  border: 1px solid #fff; /* Ajusta el ancho y color del borde según tus preferencias */
   background-color: #333; /* Ajusta el color de fondo*/
   padding: 10px; /* Ajusta el espaciado interno*/
 }
@@ -219,4 +219,4 @@ li {
   text-decoration: underline;
 }
 
-
+/*# sourceMappingURL=styles.css.map */
