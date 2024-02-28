@@ -1,0 +1,81 @@
+
+//TRABAJA//
+.trabaja {
+    margin-bottom: 50px;
+}
+
+.contact-box {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-image: url(../img/contacto.jpg);
+  background-size: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color:$color-accent;
+}
+
+.contact-box h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  padding: 10px;
+  background-color: $color-accent;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+}
+
+
+.ofrecemos {
+  width: 300px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.lista-trabaja {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-trabaja li {
+  background-color:gray;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.lista-trabaja li:nth-child(odd) {
+  background-color: #ccc; 
+}
+
+.lista-trabaja li:nth-child(even) {
+  
+  background-color: #b8b8b8; }
+
+
+

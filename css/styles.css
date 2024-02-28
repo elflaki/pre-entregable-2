@@ -1,96 +1,132 @@
 @charset "UTF-8";
+/* -------------------------------------
+   VARIABLES Y CONFIGURACIÓN GENERAL
+---------------------------------------- */
 @media (max-width: 600px) {
   body {
     font-size: 14px;
   }
 }
-body {
-  margin: 0;
-  padding: 0;
+.contacto {
+  padding: 40px;
+  text-align: center;
 }
 
-.navbar-brand {
-  width: 150px; /* Ajusta el tamaño según lo necesites */
-  height: auto; /* Esto mantendrá la proporción original */
+.info-contacto {
+  margin-top: 20px;
 }
 
-.nav {
-  border: 1px solid #fff; /* Ajusta el ancho y color del borde según tus preferencias */
-  background-color: #333; /* Ajusta el color de fondo*/
-  padding: 10px; /* Ajusta el espaciado interno*/
+.telefono a,
+.email a {
+  color: #007bff;
+  text-decoration: none;
 }
 
-.titulo-principal, .bordered-container, .image-grid {
+.telefono a:hover,
+.email a:hover {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.contacto-info {
+  background-color: #212529;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.contacto-info p {
+  margin-bottom: 10px;
+  color: #BFD104;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.contacto-info p:last-child {
+  margin-bottom: 0;
+}
+
+.fas {
+  color: #BFD104;
+}
+
+.map-container {
+  width: 600px;
+  height: 450px;
+  border: 5px solid #811e1e;
+  border-radius: 5px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.map-container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+  margin-bottom: 50px;
+}
+
+.servicios,
+.paramedicos,
+.medicos {
+  margin-top: 20px;
+}
+
+.ambulance,
+.paramedic,
+.medi {
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
 
-.titulo-principal {
-  font-family: Arial, Helvetica, sans-serif;
+.servicios,
+.paramedicos,
+.medicos {
   text-align: center;
-  text-transform: uppercase;
-  color: white;
-  text-decoration: underline;
+  margin-bottom: 40px;
 }
 
-.titulo-secundario {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-  background-color: #333;
-  padding: 0;
-  border: 1px solid #555; /* Color del borde */
-  border-radius: 10px;
-}
-
-.descripcion-principal {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  text-align: center;
-  color: #BFD104;
-  font-size: 18px;
-}
-
-.footer {
-  background-color: black;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #828282;
-  margin-top: 25%;
-  padding: 20px;
-}
-
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
-}
-
-.image-grid img {
-  width: 100%;
+.card-img {
+  max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
-body {
-  font-family: "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
+.card {
+  margin-bottom: 20px;
+}
+
+.plan-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.plan-list li {
+  color: #fff;
 }
 
 .trabaja {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .contact-box {
   max-width: 400px;
   margin: 50px auto;
   padding: 20px;
-  background-image: url(../img/contacto.jpg); /*imagen de fondo */
-  background-size: cover; /* tamaño de la caja */
+  background-image: url(../img/contacto.jpg);
+  background-size: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  color: #BFD104; /* Cambia el color del texto para que sea legible en la imagen de fondo */
+  color: #BFD104;
 }
 
 .contact-box h2 {
@@ -106,7 +142,8 @@ label {
   margin-bottom: 5px;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
@@ -126,6 +163,99 @@ button:hover {
   background-color: black;
 }
 
+.ofrecemos {
+  width: 300px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.lista-trabaja {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-trabaja li {
+  background-color: gray;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.lista-trabaja li:nth-child(odd) {
+  background-color: #ccc;
+}
+
+.lista-trabaja li:nth-child(even) {
+  background-color: #b8b8b8;
+}
+
+/* -------------------------------------
+   ESTILOS GENERALES
+---------------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif; /* Fuente predeterminada */
+}
+
+/* -------------------------------------
+   MENÚ DE NAVEGACIÓN
+---------------------------------------- */
+.navbar-brand {
+  width: 150px;
+  height: auto;
+}
+
+.nav {
+  border: 1px solid #fff;
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-item {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* -------------------------------------
+   TÍTULOS Y CONTENIDO PRINCIPAL
+---------------------------------------- */
+.titulo-principal {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+
+.titulo-secundario {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center; /* Asegura el centrado horizontal */
+  text-transform: uppercase;
+  color: white;
+  text-decoration: underline;
+  margin-bottom: 30px;
+  max-width: 80%; /* Ajusta el valor según tu diseño */
+  margin: 20px auto; /* Centra el contenedor horizontalmente y agrega un margen vertical */
+}
+
+.titulo-terciario {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center; /* Asegura el centrado horizontal */
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.descripcion-principal {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  color: #bfd104;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
 .header {
   background-color: #333;
   color: #fff;
@@ -139,6 +269,9 @@ button:hover {
   justify-content: space-around;
 }
 
+/* -------------------------------------
+   CONTENIDO PRINCIPAL
+---------------------------------------- */
 .main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -149,6 +282,19 @@ button:hover {
 section {
   border: 1px solid #ccc;
   padding: 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 img {
@@ -166,57 +312,38 @@ li {
   margin-bottom: 10px;
 }
 
-.card-img {
-  max-width: 100%;
-  height: auto;
+/* -------------------------------------
+   EFECTOS DE ANIMACIÓN
+---------------------------------------- */
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: scale(0.25);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+img {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 25%;
+  animation-fill-mode: both;
 }
 
-.card {
-  margin-bottom: 20px;
-}
-
-.plan-list {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.plan-list li {
-  color: white;
-}
-
-.servicios, .paramedicos, .medicos {
-  margin-top: 20px; /* Espacio entre secciones */
-}
-
-.ambulance, .paramedic, .medi {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.contacto {
-  padding: 40px; /* Espaciado interno */
-  text-align: center; /* Centrar contenido */
-}
-
-.info-contacto {
-  margin-top: 20px; /* Espacio superior entre la descripción y la información de contacto */
-}
-
-.telefono, .email {
-  font-size: 18px; /* Tamaño de fuente */
-  margin: 10px 0; /* Espaciado superior e inferior */
-}
-
-.telefono a, .email a {
-  color: #007bff; /* Color del enlace */
-  text-decoration: none;
-}
-
-.telefono a:hover, .email a:hover {
-  text-decoration: underline;
+/* -------------------------------------
+   PIE DE PÁGINA
+---------------------------------------- */
+.footer {
+  background-color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #828282;
+  margin-top: 25%;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

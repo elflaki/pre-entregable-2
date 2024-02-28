@@ -1,0 +1,46 @@
+//CONTACTOS//
+
+.contacto {
+  padding: 40px;
+  text-align: center;
+}
+
+.info-contacto {
+  margin-top: 20px;
+}
+
+
+
+.telefono a,
+.email a {
+  
+  color: #007bff;
+  text-decoration: none;
+}
+
+.telefono a:hover,
+.email a:hover {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.contacto-info {
+  background-color:#212529; 
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.contacto-info p {
+  margin-bottom: 10px;
+  color:$color-accent;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contacto-info p:last-child {
+  margin-bottom: 0;
+}
+.fas {
+  color:$color-accent;
+   
+}
